@@ -1,0 +1,8 @@
+<h1>Task101#input</h1>
+<%= form_tag("/task101/output.x", :method => "get") do %>
+<%= label_tag("Input quantity of numbers:") %>
+<%= number_field_tag(:digit, nil, min: 1) %>
+<%= select_tag(:route,options_for_select([ "server", "client" ], "client")) %> <br>
+<%= submit_tag("Enter") %>
+<% end %>
+<br/>
